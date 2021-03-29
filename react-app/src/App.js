@@ -12,6 +12,9 @@ import logo from './images/wknd-logo-dk.svg';
 
 import { PathUtils } from '@adobe/aem-spa-page-model-manager';
 
+/* React Core Component proxies */
+import { AEMImage, AEMTeaser, AEMList, AEMSeparator, AEMText, AEMTitle } from './components/core-components/AEMComponents';
+
 import AdventureDetail from './components/AdventureDetail';
 import Home from './components/Home';
 

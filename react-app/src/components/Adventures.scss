@@ -77,3 +77,73 @@ $adventureItemHeightMobile: 250px;
       justify-content: center;
     }
   }
+
+
+
+.aem-page {
+    margin-bottom: 1rem;
+
+    .aem-Grid .aem-GridColumn {
+        padding: .5rem;
+    }
+
+    .cmp-button {
+        background-color: yellow;
+        padding: 1rem 2rem;
+        display: inline-block;
+
+        .cmp-button__text {
+            color: black;
+            font-weight: bold;
+
+        }
+    }
+}
+
+
+  /*
+
+.aem-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .cq-dd-image {
+        position: relative;
+    }
+
+    .cmp-image__image {
+        display: block;
+        width: 100vw;
+        height: 400px;
+        object-fit: cover;
+
+        flex: 1;
+        overflow: hidden;
+    }
+
+    .cmp-teaser__content {
+        $contentHeight: 150px;
+
+        box-sizing: border-box;
+        position: relative;
+        background-color: #fff;
+        top: -$contentHeight;
+        height: $contentHeight;
+        min-height: $contentHeight;
+        padding-bottom: 0;
+        width: 800px;
+        margin: 0 auto;
+        padding: 20px 40px 0 40px;
+        background-color: white;
+    }
+
+    .cmp-teaser__title-text {
+        text-align: left;
+        font-family: Asar,Georgia,Times New Roman,Times,serif;
+        margin: .5em 0 .25em 0;
+        font-size: 36px;
+    }
+
+}*/

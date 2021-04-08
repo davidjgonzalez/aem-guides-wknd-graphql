@@ -12,7 +12,8 @@ import useGraphQL from '../api/useGraphQL';
 import Error from './Error';
 import Loading from './Loading';
 import './AdventureDetail.scss';
-import { AEMText } from './AEMText';
+
+import AEMPage from './AEMPage';
 import Image from './Image';
 
 const { REACT_APP_PUBLIC_URL } = process.env;
@@ -54,9 +55,6 @@ function AdventureDetail(props) {
             <img className="Backbutton-icon" src={REACT_APP_PUBLIC_URL + '/icon-close.svg'} alt="Return" />
           </Link>
           <h1 className="adventure-detail-title">{adventureData.adventureTitle}</h1>
-          <AEMText
-            pagePath={`/content/wknd-spa/home/adventures/${pathname}`}
-            itemPath='text21' />
           <div className="adventure-detail-info">
             <div className="adventure-detail-info-label">Activity</div>
             <div className="adventure-detail-info-description">{adventureData.adventureActivity}</div>
@@ -75,6 +73,8 @@ function AdventureDetail(props) {
             <Image className="adventure-detail-primaryimage" alt={adventureData.adventureTitle}
                    {... adventureData.adventurePrimaryImage} />
             <div dangerouslySetInnerHTML={{__html: adventureData.adventureDescription.html}}></div>
+
+            <AEMPage pagePath={`/content/wknd-spa/adventures/${pathname}`} />
             <h2>Itinerary</h2>
             <hr />
             <div className="adventure-detail-itinerary"

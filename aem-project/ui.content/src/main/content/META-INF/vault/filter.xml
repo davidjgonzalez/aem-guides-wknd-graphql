@@ -4,4 +4,5 @@
     <filter root="/content/graphql" mode="merge"/>
     <filter root="/content/wknd-spa" mode="merge" />
     <filter root="/conf/wknd-spa" mode="merge" />
+    <filter root="/etc/map/wknd-spa" mode="update" />
 </workspaceFilter>
